@@ -1,9 +1,10 @@
 {
   "name": "@coddist/mathx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Math stuff",
   "main": "pkg/index.js",
-  "typings": "pkg/index.d.ts",
+  "types": "pkg/index.d.ts",
+  "files": ["pkg/"],
   "scripts": {
     "build": "tsc",
     "lint": "eslint src",
@@ -14,9 +15,15 @@
     "test": "jest"
   },
   "repository": "https://github.com/coddist/mathx.git",
+  "bugs": {
+    "url": "https://github.com/coddist/mathx/issues"
+  },
   "author": "Igor Snitkin <snigo.ogins@gmail.com>",
   "license": "Apache-2.0",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.8.1",
