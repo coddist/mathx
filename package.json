@@ -1,13 +1,16 @@
 {
   "name": "@coddist/mathx",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Math stuff",
-  "main": "index.js",
+  "main": "pkg/index.js",
+  "typings": "pkg/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "lint:staged": "lint-staged",
     "prepare": "husky install",
+    "prepublish": "yarn lint && yarn test",
     "test": "jest"
   },
   "repository": "https://github.com/coddist/mathx.git",
