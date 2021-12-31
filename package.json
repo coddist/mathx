@@ -1,6 +1,6 @@
 {
   "name": "@coddist/mathx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Math stuff",
   "main": "pkg/index.js",
   "typings": "pkg/index.d.ts",
