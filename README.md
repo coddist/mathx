@@ -127,7 +127,7 @@ Another popular one. Similarly to [\_.round()](https://lodash.com/docs/4.17.15#r
 import { round } from '@coddist/mathx';
 
 round(0.45876453, 4); // 0.4588
-round(0.1 + 0.2); // 0.3
+round(0.1 + 0.2, 1); // 0.3
 round(23567, -3); // 24000
 round(23567, -2); // 23600
 round(23567, -1); // 23570
