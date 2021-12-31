@@ -1,4 +1,4 @@
-import precision from './precision';
+import getPrecision from './getPrecision';
 import round from './round';
 
 /**
@@ -12,7 +12,7 @@ import round from './round';
  * @returns {boolean} True or False
  */
 function approx(a: number, b: number, delta = 0): boolean {
-  const p = Math.min(Math.max(-100, precision(a), precision(b), precision(delta)), 100);
+  const p = Math.min(Math.max(-100, getPrecision(a), getPrecision(b), getPrecision(delta)), 100);
   return round(Math.abs(a - b), p) <= delta;
 }
 

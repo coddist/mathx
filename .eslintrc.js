@@ -20,10 +20,10 @@ module.exports = {
     'simple-import-sort',
   ],
   rules: {
-    camelcase: 0,
-    'no-underscore-dangle': 0,
-    'import/extensions': 0,
-    'no-shadow': 0,
+    camelcase: 'off',
+    'no-underscore-dangle': 'off',
+    'import/extensions': 'off',
+    'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'jest/no-disabled-tests': 'warn',
@@ -31,12 +31,13 @@ module.exports = {
     'jest/no-identical-title': 'error',
     'jest/prefer-to-have-length': 'warn',
     'jest/valid-expect': 'error',
+    'simple-import-sort/imports': 'error',
   },
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
       rules: {
-        'import/prefer-default-export': 0,
+        'import/prefer-default-export': 'off',
       },
     },
   ],

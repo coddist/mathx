@@ -11,10 +11,10 @@ const SCI_RE = /^[+-]?\d+(?:\.(\d*))?e([+-]?\d+)$/;
  *
  * @returns Precision of the number
  */
-function precision(number: number): number {
+function getPrecision(number: number): number {
   return Number(
-    number.toExponential().replace(SCI_RE, (_, d, e) => ((d?.length || 0) - Number(e)).toString()),
+    number.toExponential().replace(SCI_RE, (_, d, e) => String((d?.length || 0) - Number(e))),
   );
 }
 
-export default precision;
+export default getPrecision;
